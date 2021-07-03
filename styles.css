@@ -1,0 +1,127 @@
+
+body {
+ display: flex;
+ background-image: url(https://cdn.pixabay.com/photo/2015/12/27/05/48/turntable-1109588_960_720.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 20px;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+}
+
+/* -------------- MASCHINE---------- */
+
+.maschine {
+ display: flex;
+ flex-direction: column;
+ border: 1px solid #FFF6DE;
+ border-radius: 1em;
+ background-color: #9E8F6A;
+ border-radius: 0.25em;
+ width: 20em;
+ padding: 1.5em;
+ justify-items: center;
+ align-items: center;
+ text-align: center;
+}
+
+.maschine.dark {
+background-color: #202128;
+border: 1px solid white;}
+
+/* ------------ DARK MODE BAR ----------- */
+
+.switchModeBar {
+ margin-bottom: 1em;
+}
+
+.checkbox {
+ display: none;
+}
+
+.checkbox:checked + .label .ball {
+ transform: translateX(1.8em);
+}
+
+.label {
+ display: flex;
+ border-radius: 20px;
+ width: 56px;
+ height: 20px;
+ background-color: #B5C3EB;
+}
+
+.ball {
+ height: 20px;
+ width: 20px;
+ background-color: #5A6C9E;
+border-radius: 50%;
+border: 1px solid #FFF6DE;
+bottom: 1px;
+position: relative;
+transition: 0.3s linear;
+}
+
+/* ----------------- DISPLAY ----------------- */
+
+.display {
+ display: flex;
+ min-width: 15em;
+ min-height: 5em;
+ width: 20em;
+ height: 5em;
+ border: 1px solid #FFF6DE;
+ border-radius: 5px;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 0.5em;
+ background-color: #FFF6DE;
+}
+
+.display.dark {
+background-color: #9BA0C2;
+}
+
+/* ----------------- KEYS CONTROLLER + KEYS ----------------- */
+
+.keys {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ gap: 0.5em;
+ padding: 0;
+ margin: 0;
+ height: 20em;
+ width: 20em;
+ justify-items: center;
+ align-items: center;
+
+}
+
+.key {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border: 2px solid #FFF6DE;
+ height: 100%;
+ width: 100%;
+ padding: em;
+ text-align: center;
+ color: rgb(0, 0, 0);
+ font-size: 1em;
+ background-color: seashell;
+ border-radius: 5px;
+}
+
+kbd {
+ display: block;
+ text-align: center;
+ margin: 0.5em
+}
+
+.addColorOnClick {
+background-color: teal;
+}
